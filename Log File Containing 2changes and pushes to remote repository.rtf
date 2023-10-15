@@ -1,1847 +1,594 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2709
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 Menlo-Bold;
-}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red188\green31\blue27;\red51\green184\blue29;
-\red49\green172\blue187;\red154\green158\blue29;}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c79216\c20000\c13725;\cssrgb\c22353\c75294\c14902;
-\cssrgb\c21961\c72549\c78039;\cssrgb\c66667\c67059\c14510;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\deftab720
-\pard\pardeftab720\partightenfactor0
-
-\f0\fs32 \cf2 \expnd0\expndtw0\kerning0
-Last login: Wed Oct\'a0 4 13:12:59 on ttys002
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air ~ % ls
-\f1 \
-
-\f0 Android Studio for Mac Library\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Visual Code Studio
-\f1 \
-
-\f0 C#Project2.docx\'a0\'a0\'a0\'a0 Movies\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 construction-app
-\f1 \
-
-\f0 CS639_Assignment_1.docx Music\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 examples
-\f1 \
-
-\f0 Desktop\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Pictures\'a0\'a0\'a0\'a0\'a0\'a0\'a0 github
-\f1 \
-
-\f0 Documents\'a0\'a0\'a0\'a0\'a0\'a0 Public\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 parallel
-\f1 \
-
-\f0 Downloads\'a0\'a0\'a0\'a0\'a0\'a0 ReactProject1-2.docx
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air ~ % mkdir Local
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air ~ % cd Local
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Local % cd ..
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air ~ % cd github
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air github % ls
-\f1 \
-
-\f0 SampleApp
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air github % cd ..
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air ~ % cd Local
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Local % git clone 
-\f1 \
-
-\f0 fatal: You must specify a repository to clone.
-\f1 \
-
-\f0 \'a0
-\f1 \
-
-\f0 usage: git clone [<options>] [--] <repo> [<dir>]
-\f1 \
-
-\f0 \'a0
-\f1 \
-
-\f0 \'a0\'a0\'a0 -v, --verbose\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 be more verbose
-\f1 \
-
-\f0 \'a0\'a0\'a0 -q, --quiet\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 be more quiet
-\f1 \
-
-\f0 \'a0\'a0\'a0 --progress\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 force progress reporting
-\f1 \
-
-\f0 \'a0\'a0\'a0 --reject-shallow\'a0\'a0\'a0\'a0\'a0 don't clone shallow repository
-\f1 \
-
-\f0 \'a0\'a0\'a0 -n, --no-checkout\'a0\'a0\'a0\'a0 don't create a checkout
-\f1 \
-
-\f0 \'a0\'a0\'a0 --bare\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 create a bare repository
-\f1 \
-
-\f0 \'a0\'a0\'a0 --mirror\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 create a mirror repository (implies bare)
-\f1 \
-
-\f0 \'a0\'a0\'a0 -l, --local\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 to clone from a local repository
-\f1 \
-
-\f0 \'a0\'a0\'a0 --no-hardlinks\'a0\'a0\'a0\'a0\'a0\'a0\'a0 don't use local hardlinks, always copy
-\f1 \
-
-\f0 \'a0\'a0\'a0 -s, --shared\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 setup as shared repository
-\f1 \
-
-\f0 \'a0\'a0\'a0 --recurse-submodules[=<pathspec>]
-\f1 \
-
-\f0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 initialize submodules in the clone
-\f1 \
-
-\f0 \'a0\'a0\'a0 --recursive ...\'a0\'a0\'a0\'a0\'a0\'a0 alias of --recurse-submodules
-\f1 \
-
-\f0 \'a0\'a0\'a0 -j, --jobs <n>\'a0\'a0\'a0\'a0\'a0\'a0\'a0 number of submodules cloned in parallel
-\f1 \
-
-\f0 \'a0\'a0\'a0 --template <template-directory>
-\f1 \
-
-\f0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 directory from which templates will be used
-\f1 \
-
-\f0 \'a0\'a0\'a0 --reference <repo>\'a0\'a0\'a0 reference repository
-\f1 \
-
-\f0 \'a0\'a0\'a0 --reference-if-able <repo>
-\f1 \
-
-\f0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 reference repository
-\f1 \
-
-\f0 \'a0\'a0\'a0 --dissociate\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 use --reference only while cloning
-\f1 \
-
-\f0 \'a0\'a0\'a0 -o, --origin <name>\'a0\'a0 use <name> instead of 'origin' to track upstream
-\f1 \
-
-\f0 \'a0\'a0\'a0 -b, --branch <branch>
-\f1 \
-
-\f0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 checkout <branch> instead of the remote's HEAD
-\f1 \
-
-\f0 \'a0\'a0\'a0 -u, --upload-pack <path>
-\f1 \
-
-\f0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 path to git-upload-pack on the remote
-\f1 \
-
-\f0 \'a0\'a0\'a0 --depth <depth>\'a0\'a0\'a0\'a0\'a0\'a0 create a shallow clone of that depth
-\f1 \
-
-\f0 \'a0\'a0\'a0 --shallow-since <time>
-\f1 \
-
-\f0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 create a shallow clone since a specific time
-\f1 \
-
-\f0 \'a0\'a0\'a0 --shallow-exclude <revision>
-\f1 \
-
-\f0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 deepen history of shallow clone, excluding rev
-\f1 \
-
-\f0 \'a0\'a0\'a0 --single-branch\'a0\'a0\'a0\'a0\'a0\'a0 clone only one branch, HEAD or --branch
-\f1 \
-
-\f0 \'a0\'a0\'a0 --no-tags\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 don't clone any tags, and make later fetches not to follow them
-\f1 \
-
-\f0 \'a0\'a0\'a0 --shallow-submodules\'a0 any cloned submodules will be shallow
-\f1 \
-
-\f0 \'a0\'a0\'a0 --separate-git-dir <gitdir>
-\f1 \
-
-\f0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 separate git dir from working tree
-\f1 \
-
-\f0 \'a0\'a0\'a0 -c, --config <key=value>
-\f1 \
-
-\f0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 set config inside the new repository
-\f1 \
-
-\f0 \'a0\'a0\'a0 --server-option <server-specific>
-\f1 \
-
-\f0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 option to transmit
-\f1 \
-
-\f0 \'a0\'a0\'a0 -4, --ipv4\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 use IPv4 addresses only
-\f1 \
-
-\f0 \'a0\'a0\'a0 -6, --ipv6\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 use IPv6 addresses only
-\f1 \
-
-\f0 \'a0\'a0\'a0 --filter <args>\'a0\'a0\'a0\'a0\'a0\'a0 object filtering
-\f1 \
-
-\f0 \'a0\'a0\'a0 --also-filter-submodules
-\f1 \
-
-\f0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 apply partial clone filters to submodules
-\f1 \
-
-\f0 \'a0\'a0\'a0 --remote-submodules\'a0\'a0 any cloned submodules will use their remote-tracking branch
-\f1 \
-
-\f0 \'a0\'a0\'a0 --sparse\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 initialize sparse-checkout file to include only files at root
-\f1 \
-
-\f0 \'a0\'a0\'a0 --bundle-uri <uri>\'a0\'a0\'a0 a URI for downloading bundles before fetching from origin remote
-\f1 \
-
-\f0 \'a0
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Local % git clone https://github.com/santhosh62372n/Remote.git
-\f1 \
-
-\f0 Cloning into 'Remote'...
-\f1 \
-
-\f0 remote: Enumerating objects: 3, done.
-\f1 \
-
-\f0 remote: Counting objects: 100% (3/3), done.
-\f1 \
-
-\f0 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-\f1 \
-
-\f0 Receiving objects: 100% (3/3), done.
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Local % cd Remote
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git status
-\f1 \
-
-\f0 On branch main
-\f1 \
-
-\f0 Your branch is up to date with 'origin/main'.
-\f1 \
-
-\f0 \'a0
-\f1 \
-
-\f0 nothing to commit, working tree clean
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git add .
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git commit -m "add index.html and correct README.md"
-\f1 \
-
-\f0 \'a0
-\f1 \
-
-\f0 On branch main
-\f1 \
-
-\f0 Your branch is up to date with 'origin/main'.
-\f1 \
-
-\f0 \'a0
-\f1 \
-
-\f0 nothing to commit, working tree clean
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git remote
-\f1 \
-
-\f0 origin
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git remote show origin
-\f1 \
-
-\f0 * remote origin
-\f1 \
-
-\f0 \'a0 Fetch URL: https://github.com/santhosh62372n/Remote.git
-\f1 \
-
-\f0 \'a0 Push\'a0 URL: https://github.com/santhosh62372n/Remote.git
-\f1 \
-
-\f0 \'a0 HEAD branch: main
-\f1 \
-
-\f0 \'a0 Remote branch:
-\f1 \
-
-\f0 \'a0\'a0\'a0 main tracked
-\f1 \
-
-\f0 \'a0 Local branch configured for 'git pull':
-\f1 \
-
-\f0 \'a0\'a0\'a0 main merges with remote main
-\f1 \
-
-\f0 \'a0 Local ref configured for 'git push':
-\f1 \
-
-\f0 \'a0\'a0\'a0 main pushes to main (up to date)
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin main
-\f1 \
-
-\f0 Username for 'https://github.com': st62372n
-\f1 \
-
-\f0 Password for 'https://st62372n@github.com': 
-\f1 \
-
-\f0 remote: Support for password authentication was removed on August 13, 2021.
-\f1 \
-
-\f0 remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
-\f1 \
-
-\f0 fatal: Authentication failed for 'https://github.com/santhosh62372n/Remote.git/'
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin main
-\f1 \
-
-\f0 Username for 'https://github.com': santhosh62372n
-\f1 \
-
-\f0 Password for 'https://santhosh62372n@github.com': 
-\f1 \
-
-\f0 remote: Support for password authentication was removed on August 13, 2021.
-\f1 \
-
-\f0 remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
-\f1 \
-
-\f0 fatal: Authentication failed for 'https://github.com/santhosh62372n/Remote.git/'
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin main
-\f1 \
-
-\f0 Username for 'https://github.com': st62372n@pace.edu
-\f1 \
-
-\f0 Password for 'https://st62372n@pace.edu@github.com': 
-\f1 \
-
-\f0 remote: Support for password authentication was removed on August 13, 2021.
-\f1 \
-
-\f0 remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
-\f1 \
-
-\f0 fatal: Authentication failed for 'https://github.com/santhosh62372n/Remote.git/'
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin main
-\f1 \
-
-\f0 Username for 'https://github.com': santhosh62372n
-\f1 \
-
-\f0 Password for 'https://santhosh62372n@github.com': 
-\f1 \
-
-\f0 remote: Support for password authentication was removed on August 13, 2021.
-\f1 \
-
-\f0 remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
-\f1 \
-
-\f0 fatal: Authentication failed for 'https://github.com/santhosh62372n/Remote.git/'
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git config --global user.name santhosh62372n
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % pwd
-\f1 \
-
-\f0 /Users/santhoshcharudatta/Local/Remote
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin main
-\f1 \
-
-\f0 Username for 'https://github.com': santhosh62372n 
-\f1 \
-
-\f0 Password for 'https://santhosh62372n@github.com': 
-\f1 \
-
-\f0 remote: Support for password authentication was removed on August 13, 2021.
-\f1 \
-
-\f0 remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
-\f1 \
-
-\f0 fatal: Authentication failed for 'https://github.com/santhosh62372n/Remote.git/'
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git config --global santhosh62372n\'a0\'a0\'a0\'a0\'a0\'a0 
-\f1 \
-
-\f0 error: key does not contain a section: santhosh62372n
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git config --global santhosh 
-\f1 \
-
-\f0 error: key does not contain a section: santhosh
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git config --global santhosh62372n
-\f1 \
-
-\f0 error: key does not contain a section: santhosh62372n
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % cd ..
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Local % cd ..
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air ~ % cd ..
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air /Users % ls
-\f1 \
-
-\f0 Shared\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 santhoshcharudatta
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air /Users % cd santhoshcharudatta
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air ~ % git config -- global user.name santhosh62372n
-\f1 \
-
-\f0 fatal: not in a git directory
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air ~ % cd remote
-\f1 \
-
-\f0 cd: no such file or directory: remote
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air ~ % ls
-\f1 \
-
-\f0 Android Studio for Mac Library\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 ReactProject1-2.docx
-\f1 \
-
-\f0 C#Project2.docx\'a0\'a0\'a0\'a0 Local\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Visual Code Studio
-\f1 \
-
-\f0 CS639_Assignment_1.docx Movies\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 construction-app
-\f1 \
-
-\f0 Desktop\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Music\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 examples
-\f1 \
-
-\f0 Documents\'a0\'a0\'a0\'a0\'a0\'a0 Pictures\'a0\'a0\'a0\'a0\'a0\'a0\'a0 github
-\f1 \
-
-\f0 Downloads\'a0\'a0\'a0\'a0\'a0\'a0 Public\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 parallel
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air ~ % cd Local
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Local % git config -- global user.name santhosh62372n
-\f1 \
-
-\f0 \'a0
-\f1 \
-
-\f0 fatal: not in a git directory
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Local % ls 
-\f1 \
-
-\f0 Remote
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Local % cd Remote
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git config -- global user.name santhosh62372n
-\f1 \
-
-\f0 \'a0
-\f1 \
-
-\f0 error: key does not contain a section: global
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git config --global user.name santhosh62372n 
-\f1 \
-
-\f0 \'a0
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin main
-\f1 \
-
-\f0 Username for 'https://github.com': Santhosh62372n@pace.edu
-\f1 \
-
-\f0 Password for 'https://Santhosh62372n@pace.edu@github.com': 
-\f1 \
-
-\f0 remote: Support for password authentication was removed on August 13, 2021.
-\f1 \
-
-\f0 remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
-\f1 \
-
-\f0 fatal: Authentication failed for 'https://github.com/santhosh62372n/Remote.git/'
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % ls
-\f1 \
-
-\f0 README.md
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin main
-\f1 \
-
-\f0 Username for 'https://github.com': st62372n
-\f1 \
-
-\f0 Password for 'https://st62372n@github.com': 
-\f1 \
-
-\f0 remote: Support for password authentication was removed on August 13, 2021.
-\f1 \
-
-\f0 remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
-\f1 \
-
-\f0 fatal: Authentication failed for 'https://github.com/santhosh62372n/Remote.git/'
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin main
-\f1 \
-
-\f0 Username for 'https://github.com': st62372n
-\f1 \
-
-\f0 Password for 'https://st62372n@github.com': 
-\f1 \
-
-\f0 Everything up-to-date
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % ls\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 
-\f1 \
-
-\f0 README.md
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git add .
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git commit \'96m "add index.html and correct README.md"
-\f1 \
-
-\f0 error: pathspec '\'96m' did not match any file(s) known to git
-\f1 \
-
-\f0 error: pathspec 'add index.html and correct README.md' did not match any file(s) known to git
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % ls 
-\f1 \
-
-\f0 README.md
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git add .
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git commit -m "add index.html and correct README.md"
-\f1 \
-
-\f0 On branch main
-\f1 \
-
-\f0 Your branch is up to date with 'origin/main'.
-\f1 \
-
-\f0 \'a0
-\f1 \
-
-\f0 nothing to commit, working tree clean
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git Remote
-\f1 \
-
-\f0 fatal: cannot handle Remote as a builtin
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git remote
-\f1 \
-
-\f0 origin
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git remote show origin
-\f1 \
-
-\f0 * remote origin
-\f1 \
-
-\f0 \'a0 Fetch URL: https://github.com/santhosh62372n/Remote.git
-\f1 \
-
-\f0 \'a0 Push\'a0 URL: https://github.com/santhosh62372n/Remote.git
-\f1 \
-
-\f0 \'a0 HEAD branch: main
-\f1 \
-
-\f0 \'a0 Remote branch:
-\f1 \
-
-\f0 \'a0\'a0\'a0 main tracked
-\f1 \
-
-\f0 \'a0 Local branch configured for 'git pull':
-\f1 \
-
-\f0 \'a0\'a0\'a0 main merges with remote main
-\f1 \
-
-\f0 \'a0 Local ref configured for 'git push':
-\f1 \
-
-\f0 \'a0\'a0\'a0 main pushes to main (up to date)
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin main
-\f1 \
-
-\f0 Everything up-to-date
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % ls
-\f1 \
-
-\f0 README.md
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % vi README.md
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git status
-\f1 \
-
-\f0 On branch main
-\f1 \
-
-\f0 Your branch is up to date with 'origin/main'.
-\f1 \
-
-\f0 \'a0
-\f1 \
-
-\f0 Changes not staged for commit:
-\f1 \
-
-\f0 \'a0 (use "git add <file>..." to update what will be committed)
-\f1 \
-
-\f0 \'a0 (use "git restore <file>..." to discard changes in working directory)
-\f1 \
-
-\f0 \'a0\'a0\'a0 \cf3 modified:\'a0\'a0 README.md
-\f1 \cf2 \
-
-\f0 \'a0
-\f1 \
-
-\f0 no changes added to commit (use "git add" and/or "git commit -a")
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % touch index.html
-\f1 \
-
-\f0 \'a0
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % ls
-\f1 \
-
-\f0 README.md\'a0\'a0 index.html
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % vi index.html
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % touch hello.html
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % vi README.md\'a0\'a0\'a0 
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git status
-\f1 \
-
-\f0 On branch main
-\f1 \
-
-\f0 Your branch is up to date with 'origin/main'.
-\f1 \
-
-\f0 \'a0
-\f1 \
-
-\f0 Changes not staged for commit:
-\f1 \
-
-\f0 \'a0 (use "git add <file>..." to update what will be committed)
-\f1 \
-
-\f0 \'a0 (use "git restore <file>..." to discard changes in working directory)
-\f1 \
-
-\f0 \'a0\'a0\'a0 \cf3 modified:\'a0\'a0 README.md
-\f1 \cf2 \
-
-\f0 \'a0
-\f1 \
-
-\f0 Untracked files:
-\f1 \
-
-\f0 \'a0 (use "git add <file>..." to include in what will be committed)
-\f1 \
-
-\f0 \'a0\'a0\'a0 \cf3 hello.html
-\f1 \cf2 \
-
-\f0 \'a0\'a0\'a0 \cf3 index.html
-\f1 \cf2 \
-
-\f0 \'a0
-\f1 \
-
-\f0 no changes added to commit (use "git add" and/or "git commit -a")
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git commit \'96m "add index.html and correct README.md"
-\f1 \
-
-\f0 error: pathspec '\'96m' did not match any file(s) known to git
-\f1 \
-
-\f0 error: pathspec 'add index.html and correct README.md' did not match any file(s) known to git
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git commit \'96m "add index.html and correct README.md"
-\f1 \
-
-\f0 error: pathspec '\'96m' did not match any file(s) known to git
-\f1 \
-
-\f0 error: pathspec 'add index.html and correct README.md' did not match any file(s) known to git
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git commit -m "add index.html and correct README.md"
-\f1 \
-
-\f0 On branch main
-\f1 \
-
-\f0 Your branch is up to date with 'origin/main'.
-\f1 \
-
-\f0 \'a0
-\f1 \
-
-\f0 Changes not staged for commit:
-\f1 \
-
-\f0 \'a0 (use "git add <file>..." to update what will be committed)
-\f1 \
-
-\f0 \'a0 (use "git restore <file>..." to discard changes in working directory)
-\f1 \
-
-\f0 \'a0\'a0\'a0 \cf3 modified:\'a0\'a0 README.md
-\f1 \cf2 \
-
-\f0 \'a0
-\f1 \
-
-\f0 Untracked files:
-\f1 \
-
-\f0 \'a0 (use "git add <file>..." to include in what will be committed)
-\f1 \
-
-\f0 \'a0\'a0\'a0 \cf3 hello.html
-\f1 \cf2 \
-
-\f0 \'a0\'a0\'a0 \cf3 index.html
-\f1 \cf2 \
-
-\f0 \'a0
-\f1 \
-
-\f0 no changes added to commit (use "git add" and/or "git commit -a")
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git add .
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git status
-\f1 \
-
-\f0 On branch main
-\f1 \
-
-\f0 Your branch is up to date with 'origin/main'.
-\f1 \
-
-\f0 \'a0
-\f1 \
-
-\f0 Changes to be committed:
-\f1 \
-
-\f0 \'a0 (use "git restore --staged <file>..." to unstage)
-\f1 \
-
-\f0 \'a0\'a0\'a0 \cf4 modified:\'a0\'a0 README.md
-\f1 \cf2 \
-
-\f0 \'a0\'a0\'a0 \cf4 new file:\'a0\'a0 hello.html
-\f1 \cf2 \
-
-\f0 \'a0\'a0\'a0 \cf4 new file:\'a0\'a0 index.html
-\f1 \cf2 \
-
-\f0 \'a0
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git remote
-\f1 \
-
-\f0 origin
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git remote show origin
-\f1 \
-
-\f0 * remote origin
-\f1 \
-
-\f0 \'a0 Fetch URL: https://github.com/santhosh62372n/Remote.git
-\f1 \
-
-\f0 \'a0 Push\'a0 URL: https://github.com/santhosh62372n/Remote.git
-\f1 \
-
-\f0 \'a0 HEAD branch: main
-\f1 \
-
-\f0 \'a0 Remote branch:
-\f1 \
-
-\f0 \'a0\'a0\'a0 main tracked
-\f1 \
-
-\f0 \'a0 Local branch configured for 'git pull':
-\f1 \
-
-\f0 \'a0\'a0\'a0 main merges with remote main
-\f1 \
-
-\f0 \'a0 Local ref configured for 'git push':
-\f1 \
-
-\f0 \'a0\'a0\'a0 main pushes to main (up to date)
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin main
-\f1 \
-
-\f0 Everything up-to-date
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % ls
-\f1 \
-
-\f0 README.md\'a0\'a0 hello.html\'a0 index.html
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git remote -v
-\f1 \
-
-\f0 origin\'a0 https://github.com/santhosh62372n/Remote.git (fetch)
-\f1 \
-
-\f0 origin\'a0 https://github.com/santhosh62372n/Remote.git (push)
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin main
-\f1 \
-
-\f0 \'a0
-\f1 \
-
-\f0 Everything up-to-date
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git status\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 
-\f1 \
-
-\f0 On branch main
-\f1 \
-
-\f0 Your branch is up to date with 'origin/main'.
-\f1 \
-
-\f0 \'a0
-\f1 \
-
-\f0 Changes to be committed:
-\f1 \
-
-\f0 \'a0 (use "git restore --staged <file>..." to unstage)
-\f1 \
-
-\f0 \'a0\'a0\'a0 \cf4 modified:\'a0\'a0 README.md
-\f1 \cf2 \
-
-\f0 \'a0\'a0\'a0 \cf4 new file:\'a0\'a0 hello.html
-\f1 \cf2 \
-
-\f0 \'a0\'a0\'a0 \cf4 new file:\'a0\'a0 index.html
-\f1 \cf2 \
-
-\f0 \'a0
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git commit -m "Update README.md and add hello.html and index.html"
-\f1 \
-
-\f0 \'a0
-\f1 \
-
-\f0 [main a8726ed] Update README.md and add hello.html and index.html
-\f1 \
-
-\f0 \'a03 files changed, 4 insertions(+), 1 deletion(-)
-\f1 \
-
-\f0 \'a0create mode 100644 hello.html
-\f1 \
-
-\f0 \'a0create mode 100644 index.html
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin main\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 
-\f1 \
-
-\f0 \'a0
-\f1 \
-
-\f0 Enumerating objects: 7, done.
-\f1 \
-
-\f0 Counting objects: 100% (7/7), done.
-\f1 \
-
-\f0 Delta compression using up to 8 threads
-\f1 \
-
-\f0 Compressing objects: 100% (2/2), done.
-\f1 \
-
-\f0 Writing objects: 100% (5/5), 417 bytes | 417.00 KiB/s, done.
-\f1 \
-
-\f0 Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
-\f1 \
-
-\f0 To https://github.com/santhosh62372n/Remote.git
-\f1 \
-
-\f0 \'a0\'a0 46a1e2a..a8726ed\'a0 main -> main
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout \'96b develop]
-\f1 \
-
-\f0 error: pathspec '\'96b' did not match any file(s) known to git
-\f1 \
-
-\f0 error: pathspec 'develop]' did not match any file(s) known to git
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout -b develop]
-\f1 \
-
-\f0 Switched to a new branch 'develop]'
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % vi index.html
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git add .
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git status
-\f1 \
-
-\f0 On branch develop]
-\f1 \
-
-\f0 Changes to be committed:
-\f1 \
-
-\f0 \'a0 (use "git restore --staged <file>..." to unstage)
-\f1 \
-
-\f0 \'a0\'a0\'a0 \cf4 modified:\'a0\'a0 index.html
-\f1 \cf2 \
-
-\f0 \'a0
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout main
-\f1 \
-
-\f0 M\'a0\'a0 index.html
-\f1 \
-
-\f0 Switched to branch 'main'
-\f1 \
-
-\f0 Your branch is up to date with 'origin/main'.
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git diff HEAD
-\f1 \
-\pard\pardeftab720\partightenfactor0
-
-\f2\b \cf2 diff --git a/index.html b/index.html
-\f1\b0 \
-
-\f2\b index 8882da8..7182a8b 100644
-\f1\b0 \
-
-\f2\b --- a/index.html
-\f1\b0 \
-
-\f2\b +++ b/index.html
-\f1\b0 \
-\pard\pardeftab720\partightenfactor0
-
-\f0 \cf5 @@ -1 +1,3 @@
-\f1 \cf2 \
-\pard\pardeftab720\partightenfactor0
-
-\f0 \cf2 \'a0scenario 2 done
-\f1 \
-
-\f0 \cf4 +scenario 3 started
-\f1 \cf2 \
-
-\f0 +
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout develop
-\f1 \
-
-\f0 error: pathspec 'develop' did not match any file(s) known to git
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout develop
-\f1 \
-
-\f0 error: pathspec 'develop' did not match any file(s) known to git
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout develop
-\f1 \
-
-\f0 error: pathspec 'develop' did not match any file(s) known to git
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout develop
-\f1 \
-
-\f0 error: pathspec 'develop' did not match any file(s) known to git
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout develop]
-\f1 \
-
-\f0 M\'a0\'a0 index.html
-\f1 \
-
-\f0 Switched to branch 'develop]'
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git branch -m develop] develop
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git branch
-\f1 \
-
-\f0 * \cf4 develop
-\f1 \cf2 \
-
-\f0 \'a0 main
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout develop
-\f1 \
-
-\f0 M\'a0\'a0 index.html
-\f1 \
-
-\f0 Already on 'develop'
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git diff HEAD\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 
-\f1 \
-\pard\pardeftab720\partightenfactor0
-
-\f2\b \cf2 diff --git a/index.html b/index.html
-\f1\b0 \
-
-\f2\b index 8882da8..7182a8b 100644
-\f1\b0 \
-
-\f2\b --- a/index.html
-\f1\b0 \
-
-\f2\b +++ b/index.html
-\f1\b0 \
-\pard\pardeftab720\partightenfactor0
-
-\f0 \cf5 @@ -1 +1,3 @@
-\f1 \cf2 \
-\pard\pardeftab720\partightenfactor0
-
-\f0 \cf2 \'a0scenario 2 done
-\f1 \
-
-\f0 \cf4 +scenario 3 started
-\f1 \cf2 \
-
-\f0 +
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin develop
-\f1 \
-
-\f0 Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
-\f1 \
-
-\f0 remote: 
-\f1 \
-
-\f0 remote: Create a pull request for 'develop' on GitHub by visiting:
-\f1 \
-
-\f0 remote:\'a0\'a0\'a0\'a0\'a0 https://github.com/santhosh62372n/Remote/pull/new/develop
-\f1 \
-
-\f0 remote: 
-\f1 \
-
-\f0 To https://github.com/santhosh62372n/Remote.git
-\f1 \
-
-\f0 \'a0* [new branch]\'a0\'a0\'a0\'a0\'a0 develop -> develop
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git pull
-\f1 \
-
-\f0 There is no tracking information for the current branch.
-\f1 \
-
-\f0 Please specify which branch you want to merge with.
-\f1 \
-
-\f0 See git-pull(1) for details.
-\f1 \
-
-\f0 \'a0
-\f1 \
-
-\f0 \'a0\'a0\'a0 git pull <remote> <branch>
-\f1 \
-
-\f0 \'a0
-\f1 \
-
-\f0 If you wish to set tracking information for this branch you can do so with:
-\f1 \
-
-\f0 \'a0
-\f1 \
-
-\f0 \'a0\'a0\'a0 git branch --set-upstream-to=origin/<branch> develop
-\f1 \
-
-\f0 \'a0
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git branch\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 
-\f1 \
-
-\f0 * \cf4 develop
-\f1 \cf2 \
-
-\f0 \'a0 main
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git status
-\f1 \
-
-\f0 On branch develop
-\f1 \
-
-\f0 Changes to be committed:
-\f1 \
-
-\f0 \'a0 (use "git restore --staged <file>..." to unstage)
-\f1 \
-
-\f0 \'a0\'a0\'a0 \cf4 modified:\'a0\'a0 index.html
-\f1 \cf2 \
-
-\f0 \'a0
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % vi index.html
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git status\'a0\'a0 
-\f1 \
-
-\f0 On branch develop
-\f1 \
-
-\f0 Changes to be committed:
-\f1 \
-
-\f0 \'a0 (use "git restore --staged <file>..." to unstage)
-\f1 \
-
-\f0 \'a0\'a0\'a0 \cf4 modified:\'a0\'a0 index.html
-\f1 \cf2 \
-
-\f0 \'a0
-\f1 \
-
-\f0 Changes not staged for commit:
-\f1 \
-
-\f0 \'a0 (use "git add <file>..." to update what will be committed)
-\f1 \
-
-\f0 \'a0 (use "git restore <file>..." to discard changes in working directory)
-\f1 \
-
-\f0 \'a0\'a0\'a0 \cf3 modified:\'a0\'a0 index.html
-\f1 \cf2 \
-
-\f0 \'a0
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git add .
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout main\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 
-\f1 \
-
-\f0 M\'a0\'a0 index.html
-\f1 \
-
-\f0 Switched to branch 'main'
-\f1 \
-
-\f0 Your branch is up to date with 'origin/main'.
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git diff HEAD\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 
-\f1 \
-\pard\pardeftab720\partightenfactor0
-
-\f2\b \cf2 diff --git a/index.html b/index.html
-\f1\b0 \
-
-\f2\b index 8882da8..9af7fa2 100644
-\f1\b0 \
-
-\f2\b --- a/index.html
-\f1\b0 \
-
-\f2\b +++ b/index.html
-\f1\b0 \
-\pard\pardeftab720\partightenfactor0
-
-\f0 \cf5 @@ -1 +1,4 @@
-\f1 \cf2 \
-\pard\pardeftab720\partightenfactor0
-
-\f0 \cf2 \'a0scenario 2 done
-\f1 \
-
-\f0 \cf4 +scenario 3 started
-\f1 \cf2 \
-
-\f0 \cf4 +hi
-\f1 \cf2 \
-
-\f0 +
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git diff HEAD\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 
-\f1 \
-\pard\pardeftab720\partightenfactor0
-
-\f2\b \cf2 diff --git a/index.html b/index.html
-\f1\b0 \
-
-\f2\b index 8882da8..9af7fa2 100644
-\f1\b0 \
-
-\f2\b --- a/index.html
-\f1\b0 \
-
-\f2\b +++ b/index.html
-\f1\b0 \
-\pard\pardeftab720\partightenfactor0
-
-\f0 \cf5 @@ -1 +1,4 @@
-\f1 \cf2 \
-\pard\pardeftab720\partightenfactor0
-
-\f0 \cf2 \'a0scenario 2 done
-\f1 \
-
-\f0 \cf4 +scenario 3 started
-\f1 \cf2 \
-
-\f0 \cf4 +hi
-\f1 \cf2 \
-
-\f0 +
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout develop\'a0\'a0 
-\f1 \
-
-\f0 M\'a0\'a0 index.html
-\f1 \
-
-\f0 Switched to branch 'develop'
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git diff HEAD\'a0\'a0\'a0\'a0\'a0\'a0 
-\f1 \
-\pard\pardeftab720\partightenfactor0
-
-\f2\b \cf2 diff --git a/index.html b/index.html
-\f1\b0 \
-
-\f2\b index 8882da8..9af7fa2 100644
-\f1\b0 \
-
-\f2\b --- a/index.html
-\f1\b0 \
-
-\f2\b +++ b/index.html
-\f1\b0 \
-\pard\pardeftab720\partightenfactor0
-
-\f0 \cf5 @@ -1 +1,4 @@
-\f1 \cf2 \
-\pard\pardeftab720\partightenfactor0
-
-\f0 \cf2 \'a0scenario 2 done
-\f1 \
-
-\f0 \cf4 +scenario 3 started
-\f1 \cf2 \
-
-\f0 \cf4 +hi
-\f1 \cf2 \
-
-\f0 +
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin develop
-\f1 \
-
-\f0 Everything up-to-date
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git pull
-\f1 \
-
-\f0 There is no tracking information for the current branch.
-\f1 \
-
-\f0 Please specify which branch you want to merge with.
-\f1 \
-
-\f0 See git-pull(1) for details.
-\f1 \
-
-\f0 \'a0
-\f1 \
-
-\f0 \'a0\'a0\'a0 git pull <remote> <branch>
-\f1 \
-
-\f0 \'a0
-\f1 \
-
-\f0 If you wish to set tracking information for this branch you can do so with:
-\f1 \
-
-\f0 \'a0
-\f1 \
-
-\f0 \'a0\'a0\'a0 git branch --set-upstream-to=origin/<branch> develop
-\f1 \
-
-\f0 \'a0
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout main
-\f1 \
-
-\f0 M\'a0\'a0 index.html
-\f1 \
-
-\f0 Switched to branch 'main'
-\f1 \
-
-\f0 Your branch is up to date with 'origin/main'.
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git pull
-\f1 \
-
-\f0 Already up to date.
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout develop
-\f1 \
-
-\f0 M\'a0\'a0 index.html
-\f1 \
-
-\f0 Switched to branch 'develop'
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % vi index.html
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git commit index.html -m "hii"
-\f1 \
-
-\f0 [develop 2e621c5] hii
-\f1 \
-
-\f0 \'a01 file changed, 4 insertions(+), 1 deletion(-)
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin develop
-\f1 \
-
-\f0 Enumerating objects: 5, done.
-\f1 \
-
-\f0 Counting objects: 100% (5/5), done.
-\f1 \
-
-\f0 Delta compression using up to 8 threads
-\f1 \
-
-\f0 Compressing objects: 100% (2/2), done.
-\f1 \
-
-\f0 Writing objects: 100% (3/3), 267 bytes | 267.00 KiB/s, done.
-\f1 \
-
-\f0 Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
-\f1 \
-
-\f0 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-\f1 \
-
-\f0 To https://github.com/santhosh62372n/Remote.git
-\f1 \
-
-\f0 \'a0\'a0 a8726ed..2e621c5\'a0 develop -> develop
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git log
-\f1 \
-\pard\pardeftab720\partightenfactor0
-
-\f0 \cf6 commit 2e621c5ff3f46439b811a7b1bd2be2dbac32ac1c (
-\f2\b \cf5 HEAD -> \cf4 develop
-\f0\b0 \cf6 , 
-\f2\b \cf3 origin/develop
-\f0\b0 \cf6 )
-\f1 \cf2 \
-\pard\pardeftab720\partightenfactor0
-
-\f0 \cf2 Author: santhosh62372n <st62372n@pace.edu>
-\f1 \
-
-\f0 Date:\'a0\'a0 Sat Oct 7 11:09:29 2023 -0400
-\f1 \
-
-\f0 \'a0
-\f1 \
-
-\f0 \'a0\'a0\'a0 hii
-\f1 \
-
-\f0 \'a0
-\f1 \
-\pard\pardeftab720\partightenfactor0
-
-\f0 \cf6 commit a8726ed50b7cf659d4d7e622432cb2837d337f7e (
-\f2\b \cf3 origin/main
-\f0\b0 \cf6 , 
-\f2\b \cf3 origin/HEAD
-\f0\b0 \cf6 , 
-\f2\b \cf4 main
-\f0\b0 \cf6 )
-\f1 \cf2 \
-\pard\pardeftab720\partightenfactor0
-
-\f0 \cf2 Author: santhosh62372n <st62372n@pace.edu>
-\f1 \
-
-\f0 Date:\'a0\'a0 Sat Oct 7 10:42:15 2023 -0400
-\f1 \
-
-\f0 \'a0
-\f1 \
-
-\f0 \'a0\'a0\'a0 Update README.md and add hello.html and index.html
-\f1 \
-
-\f0 \'a0
-\f1 \
-\pard\pardeftab720\partightenfactor0
-
-\f0 \cf6 commit 46a1e2a3d924f78ece35fb6530570e359bf40cd3
-\f1 \cf2 \
-\pard\pardeftab720\partightenfactor0
-
-\f0 \cf2 Author: santhosh62372n <126991013+santhosh62372n@users.noreply.github.com>
-\f1 \
-
-\f0 Date:\'a0\'a0 Sat Oct 7 09:25:25 2023 -0400
-\f1 \
-
-\f0 \'a0
-\f1 \
-
-\f0 \'a0\'a0\'a0 Initial commit
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git branch
-\f1 \
-
-\f0 * \cf4 develop
-\f1 \cf2 \
-
-\f0 \'a0 main
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout develop
-\f1 \
-
-\f0 Already on 'develop'
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git rm index.html
-\f1 \
-
-\f0 rm 'index.html'
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git add .
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git commit -m "delete index.html"
-\f1 \
-
-\f0 [develop 1de321c] delete index.html
-\f1 \
-
-\f0 \'a01 file changed, 4 deletions(-)
-\f1 \
-
-\f0 \'a0delete mode 100644 index.html
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin develp
-\f1 \
-
-\f0 error: src refspec develp does not match any
-\f1 \
-
-\f0 \cf3 error: failed to push some refs to 'https://github.com/santhosh62372n/Remote.git'
-\f1 \cf2 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin develop
-\f1 \
-
-\f0 Enumerating objects: 3, done.
-\f1 \
-
-\f0 Counting objects: 100% (3/3), done.
-\f1 \
-
-\f0 Delta compression using up to 8 threads
-\f1 \
-
-\f0 Compressing objects: 100% (2/2), done.
-\f1 \
-
-\f0 Writing objects: 100% (2/2), 220 bytes | 220.00 KiB/s, done.
-\f1 \
-
-\f0 Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
-\f1 \
-
-\f0 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-\f1 \
-
-\f0 To https://github.com/santhosh62372n/Remote.git
-\f1 \
-
-\f0 \'a0\'a0 2e621c5..1de321c\'a0 develop -> develop
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout main
-\f1 \
-
-\f0 Switched to branch 'main'
-\f1 \
-
-\f0 Your branch is up to date with 'origin/main'.
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git pull
-\f1 \
-
-\f0 remote: Enumerating objects: 2, done.
-\f1 \
-
-\f0 remote: Counting objects: 100% (2/2), done.
-\f1 \
-
-\f0 remote: Compressing objects: 100% (2/2), done.
-\f1 \
-
-\f0 remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
-\f1 \
-
-\f0 Unpacking objects: 100% (2/2), 1.21 KiB | 618.00 KiB/s, done.
-\f1 \
-
-\f0 From https://github.com/santhosh62372n/Remote
-\f1 \
-
-\f0 \'a0\'a0 a8726ed..678d0a8\'a0 main\'a0\'a0\'a0\'a0\'a0\'a0 -> origin/main
-\f1 \
-
-\f0 Updating a8726ed..678d0a8
-\f1 \
-
-\f0 Fast-forward
-\f1 \
-
-\f0 \'a0index.html | 1 \cf3 -
-\f1 \cf2 \
-
-\f0 \'a01 file changed, 1 deletion(-)
-\f1 \
-
-\f0 \'a0delete mode 100644 index.html
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git diff HEAD
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout main
-\f1 \
-
-\f0 Already on 'main'
-\f1 \
-
-\f0 Your branch is up to date with 'origin/main'.
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git diff HEAD\'a0\'a0\'a0 
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git diff --staged 
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git log\'a0 --online
-\f1 \
-
-\f0 fatal: unrecognized argument: --online
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git log --online 
-\f1 \
-
-\f0 fatal: unrecognized argument: --online
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git log --oneline
-\f1 \
-\pard\pardeftab720\partightenfactor0
-
-\f0 \cf6 678d0a8 (
-\f2\b \cf5 HEAD -> \cf4 main
-\f0\b0 \cf6 , 
-\f2\b \cf3 origin/main
-\f0\b0 \cf6 , 
-\f2\b \cf3 origin/HEAD
-\f0\b0 \cf6 )\cf2  Merge pull request #2 from santhosh62372n/develop
-\f1 \
-
-\f0 \cf6 1de321c (
-\f2\b \cf3 origin/develop
-\f0\b0 \cf6 , 
-\f2\b \cf4 develop
-\f0\b0 \cf6 )\cf2  delete index.html
-\f1 \
-
-\f0 \cf6 9ec43cb\cf2  Merge pull request #1 from santhosh62372n/develop
-\f1 \
-
-\f0 \cf6 2e621c5\cf2  hii
-\f1 \
-
-\f0 \cf6 a8726ed\cf2  Update README.md and add hello.html and index.html
-\f1 \
-
-\f0 \cf6 46a1e2a\cf2  Initial commit
-\f1 \
-\pard\pardeftab720\partightenfactor0
-
-\f0 \cf2 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git log --oneline --graph --decorate --all
-\f1 \
-
-\f0 *\'a0\'a0 \cf6 678d0a8 (
-\f2\b \cf5 HEAD -> \cf4 main
-\f0\b0 \cf6 , 
-\f2\b \cf3 origin/main
-\f0\b0 \cf6 , 
-\f2\b \cf3 origin/HEAD
-\f0\b0 \cf6 )\cf2  Merge pull request #2 from santhosh62372n/develop
-\f1 \
-
-\f0 \cf3 |\cf4 \\\cf2 \'a0 
-\f1 \
-
-\f0 \cf3 |\cf2  * \cf6 1de321c (
-\f2\b \cf3 origin/develop
-\f0\b0 \cf6 , 
-\f2\b \cf4 develop
-\f0\b0 \cf6 )\cf2  delete index.html
-\f1 \
-
-\f0 * \cf4 |\cf2  \cf6 9ec43cb\cf2  Merge pull request #1 from santhosh62372n/develop
-\f1 \
-\pard\pardeftab720\partightenfactor0
-
-\f0 \cf6 |\cf4 \\|\cf2  
-\f1 \
-
-\f0 \cf6 |\cf2  * \cf6 2e621c5\cf2  hii
-\f1 \
-
-\f0 \cf6 |/\cf2 \'a0 
-\f1 \
-\pard\pardeftab720\partightenfactor0
-
-\f0 \cf2 * \cf6 a8726ed\cf2  Update README.md and add hello.html and index.html
-\f1 \
-
-\f0 * \cf6 46a1e2a\cf2  Initial commit
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % which git
-\f1 \
-
-\f0 /usr/bin/git
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout main
-\f1 \
-
-\f0 Already on 'main'
-\f1 \
-
-\f0 Your branch is up to date with 'origin/main'.
-\f1 \
-
-\f0 santhoshcharudatta@Santhoshs-MacBook-Air Remote %\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 
-\f1 \
-\'a0\
-}
+Last login: Wed Oct  4 13:12:59 on ttys002
+santhoshcharudatta@Santhoshs-MacBook-Air ~ % ls
+Android Studio for Mac Library         Visual Code Studio
+C#Project2.docx     Movies          construction-app
+CS639_Assignment_1.docx Music           examples
+Desktop         Pictures        github
+Documents       Public          parallel
+Downloads       ReactProject1-2.docx
+santhoshcharudatta@Santhoshs-MacBook-Air ~ % mkdir Local
+santhoshcharudatta@Santhoshs-MacBook-Air ~ % cd Local
+santhoshcharudatta@Santhoshs-MacBook-Air Local % cd ..
+santhoshcharudatta@Santhoshs-MacBook-Air ~ % cd github
+santhoshcharudatta@Santhoshs-MacBook-Air github % ls
+SampleApp
+santhoshcharudatta@Santhoshs-MacBook-Air github % cd ..
+santhoshcharudatta@Santhoshs-MacBook-Air ~ % cd Local
+santhoshcharudatta@Santhoshs-MacBook-Air Local % git clone 
+fatal: You must specify a repository to clone.
+ 
+usage: git clone [<options>] [--] <repo> [<dir>]
+ 
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    --reject-shallow      don't clone shallow repository
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recurse-submodules[=<pathspec>]
+                          initialize submodules in the clone
+    --recursive ...       alias of --recurse-submodules
+    -j, --jobs <n>        number of submodules cloned in parallel
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    --reference-if-able <repo>
+                          reference repository
+    --dissociate          use --reference only while cloning
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --shallow-since <time>
+                          create a shallow clone since a specific time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --single-branch       clone only one branch, HEAD or --branch
+    --no-tags             don't clone any tags, and make later fetches not to follow them
+    --shallow-submodules  any cloned submodules will be shallow
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+    --server-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --filter <args>       object filtering
+    --also-filter-submodules
+                          apply partial clone filters to submodules
+    --remote-submodules   any cloned submodules will use their remote-tracking branch
+    --sparse              initialize sparse-checkout file to include only files at root
+    --bundle-uri <uri>    a URI for downloading bundles before fetching from origin remote
+ 
+santhoshcharudatta@Santhoshs-MacBook-Air Local % git clone https://github.com/santhosh62372n/Remote.git
+Cloning into 'Remote'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+santhoshcharudatta@Santhoshs-MacBook-Air Local % cd Remote
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+ 
+nothing to commit, working tree clean
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git add .
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git commit -m "add index.html and correct README.md"
+ 
+On branch main
+Your branch is up to date with 'origin/main'.
+ 
+nothing to commit, working tree clean
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git remote
+origin
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git remote show origin
+* remote origin
+  Fetch URL: https://github.com/santhosh62372n/Remote.git
+  Push  URL: https://github.com/santhosh62372n/Remote.git
+  HEAD branch: main
+  Remote branch:
+    main tracked
+  Local branch configured for 'git pull':
+    main merges with remote main
+  Local ref configured for 'git push':
+    main pushes to main (up to date)
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin main
+Username for 'https://github.com': st62372n
+Password for 'https://st62372n@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/santhosh62372n/Remote.git/'
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin main
+Username for 'https://github.com': santhosh62372n
+Password for 'https://santhosh62372n@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/santhosh62372n/Remote.git/'
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin main
+Username for 'https://github.com': st62372n@pace.edu
+Password for 'https://st62372n@pace.edu@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/santhosh62372n/Remote.git/'
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin main
+Username for 'https://github.com': santhosh62372n
+Password for 'https://santhosh62372n@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/santhosh62372n/Remote.git/'
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git config --global user.name santhosh62372n
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % pwd
+/Users/santhoshcharudatta/Local/Remote
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin main
+Username for 'https://github.com': santhosh62372n 
+Password for 'https://santhosh62372n@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/santhosh62372n/Remote.git/'
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git config --global santhosh62372n       
+error: key does not contain a section: santhosh62372n
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git config --global santhosh 
+error: key does not contain a section: santhosh
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git config --global santhosh62372n
+error: key does not contain a section: santhosh62372n
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % cd ..
+santhoshcharudatta@Santhoshs-MacBook-Air Local % cd ..
+santhoshcharudatta@Santhoshs-MacBook-Air ~ % cd ..
+santhoshcharudatta@Santhoshs-MacBook-Air /Users % ls
+Shared          santhoshcharudatta
+santhoshcharudatta@Santhoshs-MacBook-Air /Users % cd santhoshcharudatta
+santhoshcharudatta@Santhoshs-MacBook-Air ~ % git config -- global user.name santhosh62372n
+fatal: not in a git directory
+santhoshcharudatta@Santhoshs-MacBook-Air ~ % cd remote
+cd: no such file or directory: remote
+santhoshcharudatta@Santhoshs-MacBook-Air ~ % ls
+Android Studio for Mac Library         ReactProject1-2.docx
+C#Project2.docx     Local           Visual Code Studio
+CS639_Assignment_1.docx Movies          construction-app
+Desktop         Music           examples
+Documents       Pictures        github
+Downloads       Public          parallel
+santhoshcharudatta@Santhoshs-MacBook-Air ~ % cd Local
+santhoshcharudatta@Santhoshs-MacBook-Air Local % git config -- global user.name santhosh62372n
+ 
+fatal: not in a git directory
+santhoshcharudatta@Santhoshs-MacBook-Air Local % ls 
+Remote
+santhoshcharudatta@Santhoshs-MacBook-Air Local % cd Remote
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git config -- global user.name santhosh62372n
+ 
+error: key does not contain a section: global
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git config --global user.name santhosh62372n 
+ 
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin main
+Username for 'https://github.com': Santhosh62372n@pace.edu
+Password for 'https://Santhosh62372n@pace.edu@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/santhosh62372n/Remote.git/'
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % ls
+README.md
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin main
+Username for 'https://github.com': st62372n
+Password for 'https://st62372n@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/santhosh62372n/Remote.git/'
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin main
+Username for 'https://github.com': st62372n
+Password for 'https://st62372n@github.com': 
+Everything up-to-date
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % ls                  
+README.md
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git add .
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git commit –m "add index.html and correct README.md"
+error: pathspec '–m' did not match any file(s) known to git
+error: pathspec 'add index.html and correct README.md' did not match any file(s) known to git
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % ls 
+README.md
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git add .
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git commit -m "add index.html and correct README.md"
+On branch main
+Your branch is up to date with 'origin/main'.
+ 
+nothing to commit, working tree clean
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git Remote
+fatal: cannot handle Remote as a builtin
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git remote
+origin
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git remote show origin
+* remote origin
+  Fetch URL: https://github.com/santhosh62372n/Remote.git
+  Push  URL: https://github.com/santhosh62372n/Remote.git
+  HEAD branch: main
+  Remote branch:
+    main tracked
+  Local branch configured for 'git pull':
+    main merges with remote main
+  Local ref configured for 'git push':
+    main pushes to main (up to date)
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin main
+Everything up-to-date
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % ls
+README.md
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % vi README.md
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+ 
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+    modified:   README.md
+ 
+no changes added to commit (use "git add" and/or "git commit -a")
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % touch index.html
+ 
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % ls
+README.md   index.html
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % vi index.html
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % touch hello.html
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % vi README.md    
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+ 
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+    modified:   README.md
+ 
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+    hello.html
+    index.html
+ 
+no changes added to commit (use "git add" and/or "git commit -a")
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git commit –m "add index.html and correct README.md"
+error: pathspec '–m' did not match any file(s) known to git
+error: pathspec 'add index.html and correct README.md' did not match any file(s) known to git
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git commit –m "add index.html and correct README.md"
+error: pathspec '–m' did not match any file(s) known to git
+error: pathspec 'add index.html and correct README.md' did not match any file(s) known to git
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git commit -m "add index.html and correct README.md"
+On branch main
+Your branch is up to date with 'origin/main'.
+ 
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+    modified:   README.md
+ 
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+    hello.html
+    index.html
+ 
+no changes added to commit (use "git add" and/or "git commit -a")
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git add .
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+ 
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+    modified:   README.md
+    new file:   hello.html
+    new file:   index.html
+ 
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git remote
+origin
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git remote show origin
+* remote origin
+  Fetch URL: https://github.com/santhosh62372n/Remote.git
+  Push  URL: https://github.com/santhosh62372n/Remote.git
+  HEAD branch: main
+  Remote branch:
+    main tracked
+  Local branch configured for 'git pull':
+    main merges with remote main
+  Local ref configured for 'git push':
+    main pushes to main (up to date)
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin main
+Everything up-to-date
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % ls
+README.md   hello.html  index.html
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git remote -v
+origin  https://github.com/santhosh62372n/Remote.git (fetch)
+origin  https://github.com/santhosh62372n/Remote.git (push)
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin main
+ 
+Everything up-to-date
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git status                                          
+On branch main
+Your branch is up to date with 'origin/main'.
+ 
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+    modified:   README.md
+    new file:   hello.html
+    new file:   index.html
+ 
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git commit -m "Update README.md and add hello.html and index.html"
+ 
+[main a8726ed] Update README.md and add hello.html and index.html
+ 3 files changed, 4 insertions(+), 1 deletion(-)
+ create mode 100644 hello.html
+ create mode 100644 index.html
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin main                                              
+ 
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (5/5), 417 bytes | 417.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/santhosh62372n/Remote.git
+   46a1e2a..a8726ed  main -> main
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout –b develop]
+error: pathspec '–b' did not match any file(s) known to git
+error: pathspec 'develop]' did not match any file(s) known to git
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout -b develop]
+Switched to a new branch 'develop]'
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % vi index.html
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git add .
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git status
+On branch develop]
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+    modified:   index.html
+ 
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout main
+M   index.html
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git diff HEAD
+diff --git a/index.html b/index.html
+index 8882da8..7182a8b 100644
+--- a/index.html
++++ b/index.html
+@@ -1 +1,3 @@
+ scenario 2 done
++scenario 3 started
++
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout develop
+error: pathspec 'develop' did not match any file(s) known to git
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout develop
+error: pathspec 'develop' did not match any file(s) known to git
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout develop
+error: pathspec 'develop' did not match any file(s) known to git
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout develop
+error: pathspec 'develop' did not match any file(s) known to git
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout develop]
+M   index.html
+Switched to branch 'develop]'
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git branch -m develop] develop
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git branch
+* develop
+  main
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout develop
+M   index.html
+Already on 'develop'
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git diff HEAD                 
+diff --git a/index.html b/index.html
+index 8882da8..7182a8b 100644
+--- a/index.html
++++ b/index.html
+@@ -1 +1,3 @@
+ scenario 2 done
++scenario 3 started
++
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin develop
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'develop' on GitHub by visiting:
+remote:      https://github.com/santhosh62372n/Remote/pull/new/develop
+remote: 
+To https://github.com/santhosh62372n/Remote.git
+ * [new branch]      develop -> develop
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+ 
+    git pull <remote> <branch>
+ 
+If you wish to set tracking information for this branch you can do so with:
+ 
+    git branch --set-upstream-to=origin/<branch> develop
+ 
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git branch             
+* develop
+  main
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git status
+On branch develop
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+    modified:   index.html
+ 
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % vi index.html
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git status   
+On branch develop
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+    modified:   index.html
+ 
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+    modified:   index.html
+ 
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git add .
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout main             
+M   index.html
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git diff HEAD          
+diff --git a/index.html b/index.html
+index 8882da8..9af7fa2 100644
+--- a/index.html
++++ b/index.html
+@@ -1 +1,4 @@
+ scenario 2 done
++scenario 3 started
++hi
++
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git diff HEAD          
+diff --git a/index.html b/index.html
+index 8882da8..9af7fa2 100644
+--- a/index.html
++++ b/index.html
+@@ -1 +1,4 @@
+ scenario 2 done
++scenario 3 started
++hi
++
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout develop   
+M   index.html
+Switched to branch 'develop'
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git diff HEAD       
+diff --git a/index.html b/index.html
+index 8882da8..9af7fa2 100644
+--- a/index.html
++++ b/index.html
+@@ -1 +1,4 @@
+ scenario 2 done
++scenario 3 started
++hi
++
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin develop
+Everything up-to-date
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+ 
+    git pull <remote> <branch>
+ 
+If you wish to set tracking information for this branch you can do so with:
+ 
+    git branch --set-upstream-to=origin/<branch> develop
+ 
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout main
+M   index.html
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git pull
+Already up to date.
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout develop
+M   index.html
+Switched to branch 'develop'
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % vi index.html
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git commit index.html -m "hii"
+[develop 2e621c5] hii
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin develop
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 267 bytes | 267.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/santhosh62372n/Remote.git
+   a8726ed..2e621c5  develop -> develop
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git log
+commit 2e621c5ff3f46439b811a7b1bd2be2dbac32ac1c (HEAD -> develop, origin/develop)
+Author: santhosh62372n <st62372n@pace.edu>
+Date:   Sat Oct 7 11:09:29 2023 -0400
+ 
+    hii
+ 
+commit a8726ed50b7cf659d4d7e622432cb2837d337f7e (origin/main, origin/HEAD, main)
+Author: santhosh62372n <st62372n@pace.edu>
+Date:   Sat Oct 7 10:42:15 2023 -0400
+ 
+    Update README.md and add hello.html and index.html
+ 
+commit 46a1e2a3d924f78ece35fb6530570e359bf40cd3
+Author: santhosh62372n <126991013+santhosh62372n@users.noreply.github.com>
+Date:   Sat Oct 7 09:25:25 2023 -0400
+ 
+    Initial commit
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git branch
+* develop
+  main
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout develop
+Already on 'develop'
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git rm index.html
+rm 'index.html'
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git add .
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git commit -m "delete index.html"
+[develop 1de321c] delete index.html
+ 1 file changed, 4 deletions(-)
+ delete mode 100644 index.html
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin develp
+error: src refspec develp does not match any
+error: failed to push some refs to 'https://github.com/santhosh62372n/Remote.git'
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git push origin develop
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 220 bytes | 220.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/santhosh62372n/Remote.git
+   2e621c5..1de321c  develop -> develop
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git pull
+remote: Enumerating objects: 2, done.
+remote: Counting objects: 100% (2/2), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), 1.21 KiB | 618.00 KiB/s, done.
+From https://github.com/santhosh62372n/Remote
+   a8726ed..678d0a8  main       -> origin/main
+Updating a8726ed..678d0a8
+Fast-forward
+ index.html | 1 -
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 index.html
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git diff HEAD
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git diff HEAD    
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git diff --staged 
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git log  --online
+fatal: unrecognized argument: --online
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git log --online 
+fatal: unrecognized argument: --online
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git log --oneline
+678d0a8 (HEAD -> main, origin/main, origin/HEAD) Merge pull request #2 from santhosh62372n/develop
+1de321c (origin/develop, develop) delete index.html
+9ec43cb Merge pull request #1 from santhosh62372n/develop
+2e621c5 hii
+a8726ed Update README.md and add hello.html and index.html
+46a1e2a Initial commit
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git log --oneline --graph --decorate --all
+*   678d0a8 (HEAD -> main, origin/main, origin/HEAD) Merge pull request #2 from santhosh62372n/develop
+|\  
+| * 1de321c (origin/develop, develop) delete index.html
+* | 9ec43cb Merge pull request #1 from santhosh62372n/develop
+|\| 
+| * 2e621c5 hii
+|/  
+* a8726ed Update README.md and add hello.html and index.html
+* 46a1e2a Initial commit
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % which git
+/usr/bin/git
+santhoshcharudatta@Santhoshs-MacBook-Air Remote % git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+santhoshcharudatta@Santhoshs-MacBook-Air Remote %          
+ 
